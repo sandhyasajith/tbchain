@@ -152,7 +152,7 @@ class TbDotsHandler extends TransactionHandler
     let functionName
     let addressFromValidator = transactionProcessRequest.header.inputs[0]
 
-    if(actionName == 'AddUser'|| actionName  == 'AddAadhar' || actionName  == 'AddPatient' || actionName == 'AddMedicine' || actionName == 'UpdateMedicine'){
+    if(actionName == 'AddUser'|| actionName  == 'AddPatient' || actionName == 'AddMedicine' || actionName == 'UpdateMedicine'){
       functionName = addDotsDetails
     }else if(actionName == 'AddIntake' || actionName == 'UpdatePatients'){
       functionName = updateDotsDetails
