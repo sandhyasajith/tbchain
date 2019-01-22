@@ -164,7 +164,7 @@ class TbDotsHandler extends TransactionHandler
     //let Address = CJ_NAMESPACE + _hash(userPublicKey).slice(-64)
 
     let getPromise
-    if (actionName == 'AddUser' || actionName == 'AddAadhar' )
+    if (actionName == 'AddUser' )
       getPromise = context.getState([addressFromValidator])
     else
       getPromise = context.getState([addressFromValidator])
