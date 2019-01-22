@@ -44,7 +44,6 @@ export class SawtoothService {
   private REST_API_BASE_URL = 'http://localhost:4200/api';
  
   public hash = (x) => createHash('sha512').update(x,'utf-8').digest('hex');
-  private _returnVBAddress = (type,input) => { type + this.hash(input) }
 
   public addPatient(key,value,value1){
     this.srcAddress = this.hash(this.TB_FAMILY).substr(0, 6) + this.hash(this.TB_PATIENT).substr(0,7) + this.hash(key).substr(0, 57);
